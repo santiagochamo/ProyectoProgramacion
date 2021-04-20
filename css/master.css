@@ -1,27 +1,21 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .logo{
     width: 30px;
 }
-.menu{
+.opciones{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
-    
-    
-    
+    align-items: flex-start;
+    justify-content: space-between;
 }
-a{
+ul,li,a {
     text-decoration: none;
-}
-ul{
     list-style-type: none;
-}
-li{
-    color
+    padding: 0%;
 }
 
 
