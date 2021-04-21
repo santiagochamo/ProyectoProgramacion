@@ -1,22 +1,40 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-.logo{
-    width: 30px;
-}
-.opciones{
+    box-sizing: border-box;}
+
+ .opciones1{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-}
+    background-color: orangered;
+
+ }   
 ul,li,a {
     text-decoration: none;
     list-style-type: none;
     padding: 0%;
+    color: black;
 }
+.columna{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:orange;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+.columna div img a:hover{
+    text-decoration: underline;
+}
+
 
 
     
