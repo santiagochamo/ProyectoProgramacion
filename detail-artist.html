@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
-    <div class="Artistas">
+    <main class="container">
+        <header class="encabezado">
+            <article class="opciones1">
+                <div class="logo" ><i class="fas fa-music"></i></div> 
+            <div class="busqueda"><form action="resultado.html" method="POST">
+                <label for="busqueda"> </label>
+                <input type="text" id="busqueda" name="busqueda-del-usuario">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form></div>
+            <ul class="menu">
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="canciones.html" target="_blank">Canciones</a></li>
+                <li><a href="artistas.html" target="_blank">Artistas </a></li>
+                <li><a href="albumes.html" target="_blank">Albumes</a></li>
+                <li><a href="playlist.html" target="_blank"></a>Playlist</li>
+                <li><a href="generos.html" target="_blank">Generos</a></li>
+            </ul>
+        </main>
+    <div class="todo">
 <h1>
     Artistas
 </h1>
@@ -113,5 +131,6 @@
    </ul>
 </div>
     </div>
+    <footer class="equipo">Matias Rozenszain, Santiago Chamo y Matias Silbert</footer>
 </body>
 </html>
