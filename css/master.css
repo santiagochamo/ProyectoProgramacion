@@ -55,3 +55,13 @@
 body {
     background-color: black;
 }
+.todog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    }  
