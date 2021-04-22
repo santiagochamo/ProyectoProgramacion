@@ -6,8 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>canciones</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    
+    <main class="container">
+        <header class="encabezado">
+            <article class="opciones1">
+                <div class="logo" ><i class="fas fa-music"></i></div> 
+            <div class="busqueda"><form action="resultado.html" method="POST">
+                <label for="busqueda"> </label>
+                <input type="text" id="busqueda" name="busqueda-del-usuario">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form></div>
+            <ul class="menu">
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="canciones.html" target="_blank">Canciones</a></li>
+                <li><a href="artistas.html" target="_blank">Artistas </a></li>
+                <li><a href="albumes.html" target="_blank">Albumes</a></li>
+                <li><a href="playlist.html" target="_blank"></a>Playlist</li>
+                <li><a href="generos.html" target="_blank">Generos</a></li>
+            </ul>
+        </main>
+    <div class="todo">
+        <header>
+            <title>
+                Cancion
+            </title>
+        </header>
+        <div>
+            <img src="https://iconape.com/wp-content/files/dw/292243/svg/292243.svg"width="200px" alt=".">
+        </div>
+        <div class="titulo">
+            <h1> Beat It </h1>
+
+        </div>
+        <div class="artista">
+            <h2> michael jackson</h2>
+        </div>
+        <div class="album">
+            <h2> thriller </h2>
+        </div>
+        <div class="link">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oRdxUFDoQe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="agregaraplaylist">
+            <p>
+                Beat it
+               <a href="playlist.html">agregar cancion a mi playlist</a> 
+            </p>
+        </div>
+    </div>
+    <footer class="equipo">Matias Rozenszain, Santiago Chamo y Matias Silbert</footer>
 </body>
 </html>

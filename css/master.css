@@ -23,6 +23,13 @@ ul,li,a {
     justify-content: space-around;
     background-color:orange;
 }
+.todo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: teal;
+}
 
 footer{
     background-color: black;
