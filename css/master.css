@@ -28,6 +28,7 @@
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
     }
     .todo{
     display: flex;
@@ -72,6 +73,9 @@ body {
 .futer{
     
     text-align: center;
+}
+.logo{
+    font-size: 40px;
 }
 
 
