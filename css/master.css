@@ -64,4 +64,32 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     
-    }  
+}
+.equipo{
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    .encabezado{
+
+}
+    
+    .logo{
+        width: 100%;
+}
+    
+    .columna{
+        flex-direction: column;
+}
+    
+    .logo{
+        font-size: 40px;
+}
+ 
+
+
