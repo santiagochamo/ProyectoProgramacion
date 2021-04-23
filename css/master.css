@@ -73,23 +73,21 @@ body {
     
 }
 
-/*@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 480px){
 
-    .encabezado{
+        .encabezado{
 
+    }
+        
+        .logo{
+            width: 100%;
+    }
+        
+        .columna{
+            flex-direction: column;
+    }
+        
+        .logo{
+            font-size: 40px;
+    } 
 }
-    
-    .logo{
-        width: 100%;
-}
-    
-    .columna{
-        flex-direction: column;
-}
-    
-    .logo{
-        font-size: 40px;
-} */
- 
-
-
