@@ -1,0 +1,33 @@
+*{
+
+    margin: 10px;
+    padding: 8px; 
+    box-sizing : border-box;
+    }
+    
+    .genres{
+        color: aliceblue;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
