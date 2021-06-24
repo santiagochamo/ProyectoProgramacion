@@ -1,17 +1,4 @@
 
-//let busca = busqueda.get("buscar")         // lo capturo aca//
-//console.log(buscar);
-//let form = document.querySelector('form')
-
-//fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${buscar}`)
-//.then(buscador =>{
-  //  return buscador.json() 
-//})
-//.then (buscador =>{
-
-   // console.log(buscador.data);
-// })
-
 
 
 
@@ -39,7 +26,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${bus
    }
    resultados.innerHTML += contenido
    if(dataBusqueda.data.length == 0){
-      alert('La busqueda no trajo resultados')
+      alert('no se han encontrado resultados') //ya que el "array" buscado esta vacio
    }
    
 })

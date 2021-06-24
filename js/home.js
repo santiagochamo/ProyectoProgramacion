@@ -12,7 +12,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums
                     `<div class="albumes">
                         
                         <div>
-                        <a href=""target="_blank"> <img src=" ${albumes[i].cover_medium}"  alt="${albumes[i].title}"></a><a href="detalleAlbum.html?${albumes[i].id}"target="_blank">${albumes[i].title}</a>
+                        <a href="detalleAlbum.html?=${albumes[i].cover_medium}"target="_blank"> <img src=" ${albumes[i].cover_medium}"  alt="${albumes[i].title}"></a><a href="detalleAlbum.html?${albumes[i].id}"target="_blank">${albumes[i].title}</a>
                         </div>
                     </div> `
         
@@ -31,7 +31,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks
                     `<div class="canciones">
                         
                         <div>
-                        <a href=""target="_blank"> <img src=" ${canciones[i].album.cover_medium}"  alt="${canciones[i].title}"></a><a href="albumes.html"target="_blank">${canciones[i].title}</a>
+                        <a href="canciones.html?${datacanciones.data[i].id}"target="_blank"> <img src=" ${canciones[i].album.cover_medium}"  alt="${canciones[i].title}"></a><a href="albumes.html"target="_blank">${canciones[i].title}</a>
                         </div>
                     </div> `
         
@@ -50,7 +50,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artist
                     `<div class="artistas">
                         
                         <div>
-                           <a href=""target="_blank"> <img src=" ${artistas[i].picture_medium}"  alt="${artistas[i].title}"></a><a href="albumes.html"target="_blank">${artistas[i].title}</a>
+                           <a href="detail-artist.html?=${artistas[i].picture_medium}"target="_blank"> <img src=" ${artistas[i].picture_medium}"  alt="${artistas[i].name}"></a><a href="detail-artist.html"target="_blank">${artistas[i].name}</a>
                         </div>
                     </div> `
         
