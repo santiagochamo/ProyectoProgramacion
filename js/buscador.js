@@ -1,7 +1,3 @@
-
-
-
-
  let busqueda = new URLSearchParams(location.search) 
 let buscar = busqueda.get('buscar') 
 let resultados = document.querySelector('.resultados')
@@ -19,7 +15,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${bus
    console.log(dataBusqueda);
    for(let i=0; i < dataBusqueda.data.length; i++){
        contenido += `<article class="">
-                        <p class="nombre"><a href="detail-track.html?id=${dataBusqueda.data[i].id}"> ${dataBusqueda.data[i].title} </a>
+                        <p class="nombre"><a href="canciones.html?id=${dataBusqueda.data[i].id}"> ${dataBusqueda.data[i].title} </a>
                         </p>
                     </article>`
 

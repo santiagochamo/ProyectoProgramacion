@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>albumes</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+</html>
 </head>
 <body>
     <main class="container">
         <header class="encabezado">
             <article class="opciones1">
                 <div class="logo" ><i class="fas fa-music"></i></div> 
-            <div class="busqueda"><form action="resultado.html" method="POST">
-                <label for="busqueda"> </label>
-                <input type="text" placeholder="buscar..." id="busqueda" name="busqueda-del-usuario">
-                <button type="submit"><i class="fas fa-search"></i></button>
+                <form class="busqueda" action="search.html" method="GET">
+                    <input type="search" name="buscar" placeholder="Buscar..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
             </form></div>
+            <ul class="menu">
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="playlist.html" target="_blank">Playlist</a></li>
+                <li><a href="genres.html" target="_blank">Generos</a></li>
+            </ul>
         </header>
-    
-        <section class="detalleAlbum">
-            <h1>Detalle album</h1>
-            <main class="container">
+ 
+        <section class="Album">
+            
+            <main class="todo">
                 <h2 class ="artista"></h2> 
-                <h2 class="genero"></h2>
-                <p class="imagen"></p>
-               
+                <p class="fans"> Fans:</p>
+                <p class="id"> id:</p>
+               <article class="imagen"> </article> 
+               <a href="">agregar a mi playlist</a>
                 
             </main>
         </section>
