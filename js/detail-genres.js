@@ -2,7 +2,7 @@ let searchParams = new URLSearchParams(location.search);
 let id = searchParams.get ("id");
 let nombreGen = searchParams.get ("name");
 let nombreGenero = document.querySelector(".nombreDelGenero");
-nombreGenero.innertText = nombreGen;
+nombreGenero.innerText = nombreGen;
     //genera un nuevo objeto con el contenido de location.search, lo que viene con el QUERYString. parsea la cadena, convierte la codificacion en distintas variables.
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/artists`) // de lo que vino en el search, dame el Id, que pase antes en la parte de genres.
     
