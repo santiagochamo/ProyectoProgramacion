@@ -12,7 +12,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums
                     `<div class="albumes">
                         
                         <div>
-                        <a href="detalleAlbum.html?=${albumes[i].cover_medium}"target="_blank"> <img src=" ${albumes[i].cover_medium}"  alt="${albumes[i].title}"></a><a href="detalleAlbum.html?${albumes[i].id}"target="_blank">${albumes[i].title}</a>
+                        <a href="detalleAlbum.html?id=${dataalbumes.data[i].id}"target="_blank"> <img src=" ${albumes[i].cover_medium}"  alt="${albumes[i].title}"></a><a href="detalleAlbum.html?id="target="_blank">${albumes[i].title}</a>
                         </div>
                     </div> `
         
@@ -25,13 +25,13 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks
 .then (datacanciones =>{
     let canciones = datacanciones.data
     let listadocanciones = document.querySelector(".canciones")
-    for(let i = 0; i <6; i++){
+    for(let i = 0; i < 6 ; i++){                                      //si quisiera ver todas las canciones es canciones.length
         listadocanciones.innerHTML += 
         
                     `<div class="canciones">
                         
                         <div>
-                        <a href="canciones.html?${datacanciones.data[i].id}"target="_blank"> <img src=" ${canciones[i].album.cover_medium}"  alt="${canciones[i].title}"></a><a href="albumes.html"target="_blank">${canciones[i].title}</a>
+                        <a href="canciones.html?id=${datacanciones.data[i].id}"target="_blank"> <img src=" ${canciones[i].album.cover_medium}"  alt="${canciones[i].title}"></a><a href="canciones.html?id="target="_blank">${canciones[i].title}</a>
                         </div>
                     </div> `
         
@@ -50,7 +50,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artist
                     `<div class="artistas">
                         
                         <div>
-                           <a href="detail-artist.html?=${artistas[i].picture_medium}"target="_blank"> <img src=" ${artistas[i].picture_medium}"  alt="${artistas[i].name}"></a><a href="detail-artist.html"target="_blank">${artistas[i].name}</a>
+                           <a href="detalleArtista.html?=${artistas[i].id}"target="_blank"> <img src=" ${artistas[i].picture_medium}"  alt="${artistas[i].name}"></a><a href="detalleArtista.html?id="target="_blank">${artistas[i].name}</a>
                         </div>
                     </div> `
         

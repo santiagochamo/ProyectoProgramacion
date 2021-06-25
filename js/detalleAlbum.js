@@ -4,22 +4,27 @@
 
 //let fotito = document.querySelector("#fotin");
 //fotito.innerHTML =+ `la foto de la imagen es ${cover_medium}`
-let artista = document.querySelector ('.artista')
-let genero = document.querySelector ('.genero')
-let imagen = document.querySelector ('.imagen')
 let objetoId = new URLSearchParams (location.search); 
 let id = objetoId.get('id'); 
 
-fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums${id}`)
+let artist = document.querySelector ('.artista')
+let fans = document.querySelector ('.fans')
+let image = document.querySelector ('.imagen')
+let elid = document.querySelector('.id')
 
-.then(respuesta=>{return respuesta.json()})
+
+fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
+
+.then(respuesta=>
+    {return respuesta.json()})
 .then(album=>{
-    artista.innerHTML = `${album.name}`
-    genero.innerHTML = `${album.name}`
-    for (let i=0; i<album.tracks.data.length; i++){
-        listado.innerHTML =+ `<li> ${album.tracks.data[i].title} </li>`
-     }
-    imagen.innerHTML =`<img src= "${album.cover_big}"> `
+    console.log(album);
+    artist.innerHTML = `${album.title}`
+    fans.innerHTML += `${album.fans}`
+    image.innerHTML =`<img src="${album.cover_xl}" >`
+    elid.innerHTML +=`${album.id}`
+    
+   
 }) 
 .catch(function(error){console.log(error);})
 
